@@ -25,6 +25,7 @@ Skills used:
 PROJECT IMAGES:
 
 ![p2-1](https://github.com/user-attachments/assets/ae273ca2-948b-488d-8de9-4c21060debcd)
-![p2-2](https://github.com/user-attachments/assets/68af83b3-e8c8-4a5d-869d-523f0aa34308)
+![p2-2](https://github.com/user-attachments/assets/531c9e1d-3b74-4847-a138-4cdd951f0935)
+
 
 
