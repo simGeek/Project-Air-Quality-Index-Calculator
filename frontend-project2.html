@@ -1,0 +1,73 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Set character encoding to UTF-8 -->
+    <title>HomePage</title>  <!-- Title of the webpage -->
+    <!-- Link to the external CSS file hosted on S3 -->
+    <link rel="stylesheet" href="{% static 'css/style_project2.css' %}">  <!-- Replace with your actual S3 bucket URL -->
+</head>
+<body>
+    <div class="outer">
+        <h1 class="centered-element">
+            Air Quality Prediction Project  <!-- Main heading of the project -->
+        </h1>
+    </div>
+
+    <h4 class='fill'>Pollutant values (in micrograms per cubic meter):</h4>  <!-- Subheading for pollutant inputs -->
+
+    <form method="POST" action="/p2_regression/" id="form_id">  <!-- Form for user input -->
+        <!-- CSRF token is removed since you are not using Django anymore -->
+        {% csrf_token %}
+        <div class="form-group1">
+            <label for="pm2dot5">PM2.5 :</label>  <!-- Label for PM2.5 input -->
+        </div>
+        <div class="form-group1">
+            <input type="text" id="pm2dot5" name="pm2dot5" placeholder="eg - 47.74">  <!-- Input for PM2.5 -->
+        </div>
+    
+        <div class="form-group1">
+            <label for="pm10">PM10 :</label>  <!-- Label for PM10 input -->
+        </div>
+        <div class="form-group1">
+            <input type="text" id="pm10" name="pm10" placeholder="eg - 77.79">  <!-- Input for PM10 -->
+        </div>
+
+        <div class="form-group1">
+            <label for="no2">NO2 :</label>  <!-- Label for NO2 input -->
+        </div>
+        <div class="form-group1">
+            <input type="text" id="no2" name="no2" placeholder="eg - 58.28">  <!-- Input for NO2 -->
+        </div>
+
+        <div class="form-group1">
+            <label for="nox">NOx :</label>  <!-- Label for NOx input -->
+        </div>
+        <div class="form-group1">
+            <input type="text" id="nox" name="nox" placeholder="eg - 57.00">  <!-- Input for NOx -->
+        </div>
+
+        <div class="form-group1">
+            <label for="nh3">NH3 :</label>  <!-- Label for NH3 input -->
+        </div>
+        <div class="form-group1">
+            <input type="text" id="nh3" name="nh3" placeholder="eg - 30.38">  <!-- Input for NH3 -->
+        </div>
+    
+        <div class="form-group1">
+            <label for="co">CO :</label>  <!-- Label for CO input -->
+        </div>
+        <div class="form-group1">
+            <input type="text" id="co" name="co" placeholder="eg - 0.92">  <!-- Input for CO -->
+        </div>
+
+        <div class="butts">
+            <button id="submitAqi" type="submit" class="button1">Submit</button>  <!-- Submit button -->
+            <a class = "button2" href="/projects">Back</a>  <!-- Link to go back to projects -->
+        </div>
+    </form>
+
+    <!-- Link to the external JavaScript file hosted on S3 -->
+    <script src="{% static 'js/project2.js' %}"></script>  <!-- Replace with your actual S3 bucket URL -->
+</body>
+</html>

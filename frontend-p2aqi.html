@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Responsive design settings -->
+
+    <!-- Link to the external CSS file hosted on S3 -->
+    <link rel="stylesheet" href="{ % static 'css/style_project2.css' %}">
+</head>
+<body style="background: radial-gradient(circle, #3498db, #7fb3d5);">  <!-- Set a gradient background -->
+    <div class="outer">
+        <h1 class="centered-element">  <!-- Main project title -->
+            Air Quality Prediction Project
+        </h1>
+    </div>
+    <div class="vertical">  <!-- Container for vertical layout -->
+        <div class="outerPre">
+            <h4>PREDICTED VALUES</h4>  <!-- Section heading for predicted values -->
+            <div class="aqi"><label for="aqi">AQI VALUE :
+                <!-- You need to pass the predicted AQI value directly here if using static -->
+                {{predictions}}  
+            </label></div>
+            <div class="aqi_bucket"><label for="aqi_bucket">AQI BUCKET :
+                <!-- You need to pass the predicted AQI bucket directly here if using static -->
+                {{bucket}}  
+            </label></div>
+        </div>
+        <div class="image-container">
+            <canvas id="myChart"></canvas>  <!-- Canvas element for the chart -->
+        </div>
+    </div>
+    <div class="backp2">
+        <a href="/project2">Back</a>  <!-- Back link to the project -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  <!-- Chart.js library for charting -->
+    <script> 
+        var ctx = document.getElementById('myChart').getContext('2d');  // Get the context for the canvas
+        var myChart = new Chart(ctx, {  // Create a new Chart instance
+            type: 'bar',  // Specify the chart type
+            data: {
+                labels: ['PM2.5', 'PM10', 'NO2', 'NOx', 'NH3', 'CO'],  // Labels for the X-axis
+                datasets: [{
+                    label: 'Pollutant values (in micrograms per cubic meter)',  // Dataset label
+                    data: [12, 19, 3, 5, 2, 3],  // Example data points for the chart, replace with actual data
+                    backgroundColor: [  // Background colors for the bars
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(254, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: 'rgba(255, 255, 255, 1)',  // Border color for the bars
+                    borderWidth: 1  // Border width for the bars
+                }]
+            },
+            options: {
+                responsive: true,  // Make the chart responsive
+                maintainAspectRatio: false,  // Allow the aspect ratio to be adjusted
+                scales: {
+                    y: {
+                        beginAtZero: true,  // Start the Y-axis at zero
+                        ticks: {
+                            color: 'white'  // Color for Y-axis ticks
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.2)'  // Color for Y-axis grid lines
+                        }
+                    },
+                    x: {
+                        ticks: {
+                            color: 'white'  // Color for X-axis ticks
+                        },
+                        grid: {
+                            color: 'rgba(255, 255, 255, 0.2)'  // Color for X-axis grid lines
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white'  // Color for legend labels
+                        }
+                    }
+                }
+            }
+        });
+    </script>  
+</body>
+</html>

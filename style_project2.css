@@ -1,0 +1,172 @@
+/* For Desktop/Laptop Screen (1920X1080) */
+html, body {
+  height: 100%; /* Set height to 100% for proper layout */
+}
+
+body {
+  background: radial-gradient(circle, #3498db, #7fb3d5); /* Blue gradient background */
+}
+
+#form_id {
+  margin-left: 6%; /* Space from the left side */
+}
+
+.outer {
+  width: 90%; /* Full width for outer container */
+  margin: 0 auto; /* Center align the outer container */
+  background-color: #F2F2F2; /* Light gray background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 10px; /* Inner spacing */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  border: 2px solid black; /* Black border */
+}
+
+.fill {
+margin-top: 2%;
+margin-left: 0;
+text-align: center;
+font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#myChart {
+  width: 400px; /* Fixed width for chart */
+  height: 200px; /* Fixed height for chart */
+}
+
+.outerPre .aqi {
+  display: block; /* Block display for AQI elements */
+  margin-left: 13%; /* Space from the left */
+}
+
+.outerPre .aqi_bucket {
+  display: block; /* Block display for AQI bucket */
+  margin-left: 13%; /* Space from the left */
+}
+
+.outerPre {
+  float: left; /* Float to the left for layout */
+  margin-top: 5%; /* Space from the top */
+  margin-left: 15%; /* Space from the left */
+  width: 26%; /* Fixed width */
+  height: 100px; /* Fixed height */
+  color: white; /* Text color */
+  background: radial-gradient(circle, #3498db, #7fb3d5); /* Blue gradient background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 5px; /* Inner spacing */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  border: 2px solid white; /* White border */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font style */
+}
+
+.centered-element {
+  text-align: center; /* Center-align text */
+  align-items: center; /* Align items in the center */
+  width: 100%; /* Full width */
+  color: black; /* Text color */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font style */
+}
+
+.ya {
+  margin-top: 5%; /* Space from the top */
+}
+
+.button1, .button2 {
+  color: white;
+  padding: 15px 25px;
+  background-color: #3498db;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+text-decoration: none;
+  cursor: pointer;
+}
+
+.button1:hover, .button2:hover{
+background-color: #2980b9; /* Darken the blue */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add an outer shadow */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.backp2 {
+  margin-top: 5%; /* Space from the top */
+  text-align: center; /* Center-align text */
+  color: black; /* Text color */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font style */
+  padding: 5px; /* Inner padding */
+}
+
+.drop {
+  font-family: "Lucida Console", "Courier New", monospace; /* Font style */
+  margin-top: 3%; /* Space from the top */
+  margin-left: 3%; /* Space from the left */
+}
+
+.form-group1 {
+  margin-top: 8px; /* Space from the top */
+  margin-bottom: 0; /* Space from the bottom */
+  margin-left: 38%; /* Space from the left */
+  font-family: "Lucida Console", "Courier New", monospace; /* Font style */
+}
+
+.image-container {
+  margin-left: 46%; /* Space from the left */
+  margin-top: 13%; /* Space from the top */
+  height: 40%; /* Height of the image container */
+  width: 40%; /* Width of the image container */
+}
+
+#options-image {
+  height: 300px; /* Fixed height for options image */
+  width: 300px; /* Fixed width for options image */
+}
+
+.butts {
+  margin-left:37%; /* Space from the left */
+  margin-top: 3%; /* Space from the top */
+}
+
+/* Responsive design adjustments for screens smaller than 1024px */
+@media (max-width: 1024px) {
+  #form_id {
+    margin-top: 40px; /* Space from the top */
+    margin-left: 3%; /* Space from the left */
+  }
+
+  .fill {
+    margin-top: 30%; /* Space from the top */
+    margin-left: 5%; /* Space from the left */
+  }
+
+  .butts {
+    margin-left: 1%; /* Space from the left */
+    margin-top: 4%; /* Space from the top */
+  }
+
+  .vertical {
+    font-size: xx-small; /* Smaller font size for vertical layout */
+    flex-direction: column; /* Column layout */
+    align-items: center; /* Center-align items */
+  }
+
+  .outerPre {
+    float: none; /* Reset float for layout */
+    margin-top: 30%; /* Space from the top */
+    margin-left: 35%; /* Space from the left */
+  }
+
+  .outerPre h4 {
+    margin-left: 23%; /* Space from the left for headings */
+  }
+
+  .outerPre .aqi_bucket,
+  .outerPre .aqi {
+    margin-left: 20%; /* Space from the left for AQI elements */
+  }
+
+  .image-container {
+    display: none; /* Hide image container on smaller screens */
+  }
+}
