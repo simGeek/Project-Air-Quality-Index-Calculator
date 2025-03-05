@@ -81,7 +81,7 @@ python manage.py startapp home
 
 🔹Delete 'views.py' from 'home'; cut and paste 'urls.py' and 'views.py' from the cloned files to 'home'
 
-🔹Create new folders inside the 'project-air-quality-index-calculator' named 'templates' and 'static'
+🔹Create new folders inside the outer 'my_project' named 'templates' and 'static'
 
 🔹Create new folders named 'js' and 'css' inside 'static'
 
@@ -93,9 +93,7 @@ python manage.py startapp home
 
 .js files --> js inside static
 
-.py files --> home (except manage.py)
-
-🔹Add the following in settings.py inside my_project:
+🔹Add the following in settings.py inside inner 'my_project':
 
 import os
 
@@ -105,7 +103,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 🔹Inside settings.py --> 'TEMPLATES', paste 'os.path.join(BASE_DIR, 'templates')' in DIRS = [PASTE HERE]
 
-🔹Add in 'my_project' --> 'urls.py',
+🔹Add in inner 'my_project' --> 'urls.py',
 
 from django.contrib import admin
 
@@ -122,6 +120,8 @@ path('admin/', admin.site.urls),
 path('', include('home.urls')),
 
 ]
+
+🔹Make sure to save all the changes.
 
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
