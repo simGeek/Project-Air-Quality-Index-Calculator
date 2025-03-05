@@ -34,7 +34,11 @@ To predict AQI given the values of 6 pollutants:
 
 🔹Infrastructure: AWS
 
-4️⃣ LIBRARIES USED [See 'requirements.txt' for specific versions]
+4️⃣ LIBRARIES USED:
+
+🔹scikit-learn: A machine learning library for building, training, and evaluating models.
+
+🔹joblib: A library for saving/loading ML models efficiently and enabling parallel processing.
 
 5️⃣ WORKFLOW
 
@@ -45,9 +49,6 @@ To predict AQI given the values of 6 pollutants:
 🔹RESULT: The AQI value and the AQI descriptor along with a visualization is displayed.
 
 6️⃣ INSTALLATION (with VS Code)
-
-Drive link to download the model:
-https://drive.google.com/file/d/1obXfMWY6871IMdyx9yrlMQJ1alpnEzhD/view?usp=drive_link
 
 🔹Install:
 
@@ -85,6 +86,8 @@ python manage.py startapp home
 
 🔹Create new folders named 'js' and 'css' inside 'static'
 
+🔹Create new folder 'ds_models' inside outer 'my_project'
+
 🔹Cut and paste the following to the respective folders:
 
 .html files --> templates
@@ -120,6 +123,11 @@ path('admin/', admin.site.urls),
 path('', include('home.urls')),
 
 ]
+
+🔹Drive link to download the model:
+https://drive.google.com/file/d/1obXfMWY6871IMdyx9yrlMQJ1alpnEzhD/view?usp=drive_link
+
+🔹After downloading the model, save it inside 'ds_models'
 
 🔹Make sure to save all the changes.
 
