@@ -27,7 +27,7 @@ document.getElementById("submitAqi").addEventListener("click", function(event) {
         const formData = new FormData(form);
 
         // Send a POST request to the server at 'p2_regression/'
-        fetch('p2_regression/', {
+        fetch('/aqi_regression/', {
             method: 'POST', // Set the request method to POST
             body: formData // Attach the form data to the request
         })
