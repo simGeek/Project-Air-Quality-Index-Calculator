@@ -78,7 +78,7 @@ def aqi_regression(request):
             }
 
             # Render p2aqi.html with prediction results
-            return render(request, 'p2aqi.html', response_data)
+            return render(request, 'aqi_results.html', response_data)
 
         except Exception as e:
             error_message = f"Error: {str(e)}"
