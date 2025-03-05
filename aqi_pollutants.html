@@ -5,7 +5,7 @@
     <meta charset="UTF-8">  <!-- Set character encoding to UTF-8 -->
     <title>HomePage</title>  <!-- Title of the webpage -->
     <!-- Link to the external CSS file hosted on S3 -->
-    <link rel="stylesheet" href="{% static 'css/style_project2.css' %}">  <!-- Replace with your actual S3 bucket URL -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">  <!-- Replace with your actual S3 bucket URL -->
 </head>
 <body>
     <div class="outer">
@@ -16,7 +16,7 @@
 
     <h4 class='fill'>Pollutant values (in micrograms per cubic meter):</h4>  <!-- Subheading for pollutant inputs -->
 
-    <form method="POST" action="/p2_regression/" id="form_id">  <!-- Form for user input -->
+    <form method="POST" action="/aqi_regression/" id="form_id">  <!-- Form for user input -->
         <!-- CSRF token is removed since you are not using Django anymore -->
         {% csrf_token %}
         <div class="form-group1">
@@ -63,11 +63,10 @@
 
         <div class="butts">
             <button id="submitAqi" type="submit" class="button1">Submit</button>  <!-- Submit button -->
-            <a class = "button2" href="/projects">Back</a>  <!-- Link to go back to projects -->
         </div>
     </form>
 
     <!-- Link to the external JavaScript file hosted on S3 -->
-    <script src="{% static 'js/project2.js' %}"></script>  <!-- Replace with your actual S3 bucket URL -->
+    <script src="{% static 'js/aqi.js' %}"></script>  <!-- Replace with your actual S3 bucket URL -->
 </body>
 </html>
