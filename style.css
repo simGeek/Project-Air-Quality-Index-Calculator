@@ -45,7 +45,7 @@ font-family: "Lucida Console", "Courier New", monospace;
 
 .outerPre {
   float: left; /* Float to the left for layout */
-  margin-top: 5%; /* Space from the top */
+  margin-top: 1%; /* Space from the top */
   margin-left: 15%; /* Space from the left */
   width: 26%; /* Fixed width */
   height: 100px; /* Fixed height */
@@ -80,22 +80,35 @@ font-family: "Lucida Console", "Courier New", monospace;
   font-weight: bold;
   font-size: 16px;
   border: 0;
-text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.button1:hover{
+.backp2 {
+  margin-top:2%;
+  margin-left:41.5%;
+  padding: 15px 30px;
+  background-color: #3498db;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.backp2 a{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button1:hover, .backp2:hover{
 background-color: #2980b9; /* Darken the blue */
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add an outer shadow */
   transform: scale(1.05); /* Slight zoom effect */
-}
-
-.backp2 {
-  margin-top: 5%; /* Space from the top */
-  text-align: center; /* Center-align text */
-  color: black; /* Text color */
-  font-family: "Lucida Console", "Courier New", monospace; /* Font style */
-  padding: 5px; /* Inner padding */
 }
 
 .drop {
@@ -113,7 +126,7 @@ background-color: #2980b9; /* Darken the blue */
 
 .image-container {
   margin-left: 46%; /* Space from the left */
-  margin-top: 13%; /* Space from the top */
+  margin-top: 8%; /* Space from the top */
   height: 40%; /* Height of the image container */
   width: 40%; /* Width of the image container */
 }
