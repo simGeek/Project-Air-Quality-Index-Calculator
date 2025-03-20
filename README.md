@@ -137,6 +137,9 @@ https://drive.google.com/file/d/1obXfMWY6871IMdyx9yrlMQJ1alpnEzhD/view?usp=drive
 
 🔹Copy and paste the given link from the output terminal (http://127.0.0.1:8000/) in the browser
 
+🔹Link to the Kaggle Dataset:
+https://www.kaggle.com/code/rohanrao/calculating-aqi-air-quality-index-tutorial/input?
+
 7️⃣ CHALLENGES
 
 🔹Choosing the ideal number of input pollutants
