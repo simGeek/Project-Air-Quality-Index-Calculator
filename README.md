@@ -135,6 +135,8 @@ https://drive.google.com/file/d/1obXfMWY6871IMdyx9yrlMQJ1alpnEzhD/view?usp=drive
 
 🔹Run 'python manage.py runserver' in the VS Code terminal
 
+🔹Copy and paste the given link from the output terminal (http://127.0.0.1:8000/) in the browser
+
 7️⃣ CHALLENGES
 
 🔹Choosing the ideal number of input pollutants
