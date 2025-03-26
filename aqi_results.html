@@ -35,6 +35,8 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  <!-- Chart.js library for charting -->
     <script> 
+        var inputs = {{ input_data|safe }};
+        var inputs_vals = Object.values(inputs);
         var ctx = document.getElementById('myChart').getContext('2d');  // Get the context for the canvas
         var myChart = new Chart(ctx, {  // Create a new Chart instance
             type: 'bar',  // Specify the chart type
@@ -42,7 +44,7 @@
                 labels: ['PM2.5', 'PM10', 'NO2', 'NOx', 'NH3', 'CO'],  // Labels for the X-axis
                 datasets: [{
                     label: 'Pollutant values (in micrograms per cubic meter)',  // Dataset label
-                    data: [12, 19, 3, 5, 2, 3],  // Example data points for the chart, replace with actual data
+                    data: inputs_vals,  // Example data points for the chart, replace with actual data
                     backgroundColor: [  // Background colors for the bars
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(254, 162, 235, 0.2)',
