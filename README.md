@@ -125,7 +125,7 @@ path('', include('home.urls')),
 ]
 
 🔹Drive link to download the model:
-https://drive.google.com/file/d/1qIlVCQHZNkk3fmsB2YriNb31JWWwUjeh/view?usp=drive_link
+https://drive.google.com/file/d/1MFTY5k-qfNgtePyBxPzDjR3T32by6bks/view?usp=drive_link
 
 🔹After downloading the model, save it inside 'ds_models'
 
