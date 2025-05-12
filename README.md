@@ -1,5 +1,9 @@
 🔹PROJECT-AIR-QUALITY-INDEX-CALCULATOR🔹
 
+◽LINKEDIN POST◽
+
+https://www.linkedin.com/feed/update/urn:li:activity:7327420584399679488/
+
 1️⃣ PURPOSE
 
 To predict AQI given the values of 6 pollutants:
