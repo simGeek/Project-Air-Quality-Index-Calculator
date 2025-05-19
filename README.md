@@ -139,6 +139,8 @@ https://drive.google.com/file/d/1MFTY5k-qfNgtePyBxPzDjR3T32by6bks/view?usp=drive
 
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
+🔹Try Ctrl+Shift+P -> Reload Window (if facing problems even after installing all modules)
+
 🔹Run 'python manage.py runserver' in the VS Code terminal
 
 🔹Copy and paste the given link from the output terminal (http://127.0.0.1:8000/) in the browser
