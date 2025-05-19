@@ -110,7 +110,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 🔹Inside settings.py --> 'TEMPLATES', paste 'os.path.join(BASE_DIR, 'templates')' in DIRS = [PASTE HERE]
 
-🔹Add in inner 'my_project' --> 'urls.py',
+🔹Add in inner 'my_project' --> 'urls.py' (remove everything there and paste the following),
 
 from django.contrib import admin
 
@@ -135,9 +135,9 @@ https://drive.google.com/file/d/1MFTY5k-qfNgtePyBxPzDjR3T32by6bks/view?usp=drive
 
 🔹Make sure to save all the changes by saving each modified file side by side (ctrl + s).
 
-🔹Run 'python manage.py migrate' in the VS Code terminal
+🔹Ctrl+Shift+P -> Reload Window (to reflect all the installed modules)
 
-🔹Try Ctrl+Shift+P -> Reload Window (if facing problems even after installing all modules)
+🔹Run 'python manage.py migrate' in the VS Code terminal
 
 🔹Run 'python manage.py runserver' in the VS Code terminal
 
