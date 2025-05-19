@@ -106,6 +106,8 @@ import os
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+🔹Inside settings.py -- > import os
+
 🔹Inside settings.py --> 'INSTALLED_APPS', include 'home'
 
 🔹Inside settings.py --> 'TEMPLATES', paste 'os.path.join(BASE_DIR, 'templates')' in DIRS = [PASTE HERE]
