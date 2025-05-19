@@ -100,7 +100,7 @@ python manage.py startapp home
 
 .js files --> js inside static
 
-🔹Add the following in settings.py inside inner 'my_project':
+🔹Add the following in settings.py inside inner 'my_project' (make sure to add after the BASE_DIR variable definition):
 
 import os
 
@@ -135,7 +135,7 @@ https://drive.google.com/file/d/1MFTY5k-qfNgtePyBxPzDjR3T32by6bks/view?usp=drive
 
 🔹After downloading the model, save it inside 'ds_models'
 
-🔹Make sure to save all the changes by saving each modified file side by side.
+🔹Make sure to save all the changes by saving each modified file side by side (ctrl + s).
 
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
