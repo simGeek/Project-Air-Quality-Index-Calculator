@@ -135,7 +135,7 @@ https://drive.google.com/file/d/1MFTY5k-qfNgtePyBxPzDjR3T32by6bks/view?usp=drive
 
 🔹After downloading the model, save it inside 'ds_models'
 
-🔹Make sure to save all the changes.
+🔹Make sure to save all the changes by saving each modified file side by side.
 
 🔹Run 'python manage.py migrate' in the VS Code terminal
 
